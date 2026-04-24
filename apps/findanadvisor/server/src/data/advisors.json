@@ -1,0 +1,202 @@
+[
+  {
+    "id": "gen-minneapolis",
+    "name": "Maple & North Wealth Partners",
+    "location": "Minneapolis",
+    "expertise": ["stocks", "bonds", "real_estate", "crypto", "mutual_funds"],
+    "riskLevels": ["low", "medium", "high"],
+    "rating": 4.0,
+    "budgetMin": 100,
+    "budgetMax": 1000000
+  },
+  {
+    "id": "gen-newyork",
+    "name": "Empire Capital Advisors",
+    "location": "New York",
+    "expertise": ["stocks", "bonds", "real_estate", "crypto", "mutual_funds"],
+    "riskLevels": ["low", "medium", "high"],
+    "rating": 4.2,
+    "budgetMin": 100000,
+    "budgetMax": 50000000
+  },
+  {
+    "id": "gen-sanfrancisco",
+    "name": "Golden Gate Wealth Group",
+    "location": "San Francisco",
+    "expertise": ["stocks", "bonds", "real_estate", "crypto", "mutual_funds"],
+    "riskLevels": ["low", "medium", "high"],
+    "rating": 4.3,
+    "budgetMin": 50000,
+    "budgetMax": 10000000
+  },
+  {
+    "id": "gen-chicago",
+    "name": "Lakeshore Financial Advisors",
+    "location": "Chicago",
+    "expertise": ["stocks", "bonds", "real_estate", "crypto", "mutual_funds"],
+    "riskLevels": ["low", "medium", "high"],
+    "rating": 3.9,
+    "budgetMin": 25000,
+    "budgetMax": 5000000
+  },
+  {
+    "id": "gen-losangeles",
+    "name": "Pacific Horizon Planners",
+    "location": "Los Angeles",
+    "expertise": ["stocks", "bonds", "real_estate", "crypto", "mutual_funds"],
+    "riskLevels": ["low", "medium", "high"],
+    "rating": 4.1,
+    "budgetMin": 50000,
+    "budgetMax": 10000000
+  },
+  {
+    "id": "gen-denver",
+    "name": "Rocky Mountain Wealth Partners",
+    "location": "Denver",
+    "expertise": ["stocks", "bonds", "real_estate", "crypto", "mutual_funds"],
+    "riskLevels": ["low", "medium", "high"],
+    "rating": 4.0,
+    "budgetMin": 100,
+    "budgetMax": 2000000
+  },
+  {
+    "id": "gen-miami",
+    "name": "Sunrise Financial Collective",
+    "location": "Miami",
+    "expertise": ["stocks", "bonds", "real_estate", "crypto", "mutual_funds"],
+    "riskLevels": ["low", "medium", "high"],
+    "rating": 3.8,
+    "budgetMin": 100,
+    "budgetMax": 5000000
+  },
+  {
+    "id": "gen-boston",
+    "name": "Beacon Hill Advisors",
+    "location": "Boston",
+    "expertise": ["stocks", "bonds", "real_estate", "crypto", "mutual_funds"],
+    "riskLevels": ["low", "medium", "high"],
+    "rating": 4.4,
+    "budgetMin": 100000,
+    "budgetMax": 10000000
+  },
+  {
+    "id": "spec-nyc-crypto",
+    "name": "Hudson Digital Assets",
+    "location": "New York",
+    "expertise": ["crypto", "stocks"],
+    "riskLevels": ["high"],
+    "rating": 4.8,
+    "budgetMin": 5000,
+    "budgetMax": 500000
+  },
+  {
+    "id": "spec-sf-crypto",
+    "name": "Silicon Ledger Capital",
+    "location": "San Francisco",
+    "expertise": ["crypto"],
+    "riskLevels": ["high"],
+    "rating": 4.6,
+    "budgetMin": 100,
+    "budgetMax": 100000
+  },
+  {
+    "id": "spec-la-crypto",
+    "name": "West Coast Token Advisors",
+    "location": "Los Angeles",
+    "expertise": ["crypto", "stocks"],
+    "riskLevels": ["high", "medium"],
+    "rating": 4.3,
+    "budgetMin": 10000,
+    "budgetMax": 1000000
+  },
+  {
+    "id": "spec-miami-crypto",
+    "name": "South Beach Digital Wealth",
+    "location": "Miami",
+    "expertise": ["crypto", "real_estate"],
+    "riskLevels": ["high"],
+    "rating": 4.7,
+    "budgetMin": 50000,
+    "budgetMax": 5000000
+  },
+  {
+    "id": "spec-minneapolis-bonds",
+    "name": "Northern Steady Retirement Group",
+    "location": "Minneapolis",
+    "expertise": ["bonds", "mutual_funds"],
+    "riskLevels": ["low"],
+    "rating": 4.9,
+    "budgetMin": 10000,
+    "budgetMax": 500000
+  },
+  {
+    "id": "spec-boston-retirement",
+    "name": "Harbor Preservation Advisors",
+    "location": "Boston",
+    "expertise": ["bonds", "mutual_funds"],
+    "riskLevels": ["low", "medium"],
+    "rating": 4.5,
+    "budgetMin": 100000,
+    "budgetMax": 10000000
+  },
+  {
+    "id": "spec-chicago-retirement",
+    "name": "Midwest Retirement Strategies",
+    "location": "Chicago",
+    "expertise": ["mutual_funds"],
+    "riskLevels": ["low"],
+    "rating": 3.9,
+    "budgetMin": 100,
+    "budgetMax": 100000
+  },
+  {
+    "id": "spec-denver-bonds",
+    "name": "Mile High Fixed Income",
+    "location": "Denver",
+    "expertise": ["bonds"],
+    "riskLevels": ["low", "medium"],
+    "rating": 4.1,
+    "budgetMin": 20000,
+    "budgetMax": 1000000
+  },
+  {
+    "id": "spec-minneapolis-realestate",
+    "name": "Twin Cities Property Wealth",
+    "location": "Minneapolis",
+    "expertise": ["real_estate"],
+    "riskLevels": ["medium"],
+    "rating": 4.2,
+    "budgetMin": 200000,
+    "budgetMax": 20000000
+  },
+  {
+    "id": "spec-chicago-realestate",
+    "name": "Windy City Real Assets",
+    "location": "Chicago",
+    "expertise": ["real_estate", "stocks"],
+    "riskLevels": ["medium", "high"],
+    "rating": 4.6,
+    "budgetMin": 500000,
+    "budgetMax": 50000000
+  },
+  {
+    "id": "spec-denver-realestate",
+    "name": "Colorado Property Partners",
+    "location": "Denver",
+    "expertise": ["real_estate", "mutual_funds"],
+    "riskLevels": ["medium"],
+    "rating": 3.7,
+    "budgetMin": 100000,
+    "budgetMax": 5000000
+  },
+  {
+    "id": "spec-boston-stocks",
+    "name": "Commonwealth Equity Specialists",
+    "location": "Boston",
+    "expertise": ["stocks"],
+    "riskLevels": ["medium", "high"],
+    "rating": 4.4,
+    "budgetMin": 10000,
+    "budgetMax": 1000000
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "extends": "@epic-web/config/typescript",
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["node", "vitest/globals", "@testing-library/jest-dom"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noUncheckedIndexedAccess": false
+  },
+  "include": [
+    "client/src/**/*",
+    "client/tests/**/*",
+    "server/src/**/*",
+    "server/tests/**/*",
+    "vitest.config.ts",
+    "client/vite.config.ts",
+    "eslint.config.js"
+  ],
+  "exclude": ["node_modules", "client/dist", "server/dist", "**/*.json"]
+}

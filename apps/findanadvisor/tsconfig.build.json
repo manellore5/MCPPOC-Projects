@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "./server/dist",
+    "rootDir": "./server/src",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "target": "ES2022",
+    "declaration": false,
+    "sourceMap": true,
+    "allowImportingTsExtensions": false
+  },
+  "include": ["server/src/**/*"],
+  "exclude": ["node_modules", "server/tests", "client", "**/*.test.ts", "**/*.test.tsx"]
+}

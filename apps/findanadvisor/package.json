@@ -1,0 +1,47 @@
+{
+  "name": "findanadvisor",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently --names server,client --prefix-colors blue,magenta \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "tsx watch ./server/src/index.ts",
+    "dev:client": "vite ./client --config ./client/vite.config.ts",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "tsc -p tsconfig.build.json",
+    "build:client": "vite build ./client --config ./client/vite.config.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "nanobot": "dotenv -e .env -- \"%USERPROFILE%\\nanobot\\nanobot.exe\" run --config ./nanobot.yaml --exclude-built-in-agents"
+  },
+  "dependencies": {
+    "@epic-web/invariant": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.24.3",
+    "fastify": "^5.0.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@epic-web/config": "^1.21.3",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.0",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.0",
+    "@types/node": "^24",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.3.0",
+    "concurrently": "^9.1.0",
+    "dotenv-cli": "^7.4.4",
+    "eslint": "^9.39.1",
+    "jsdom": "^26.0.0",
+    "prettier": "^3.7.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.6",
+    "vitest": "^3.2.0"
+  },
+  "prettier": "@epic-web/config/prettier"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@epic-web/mcp-dev",
+  "version": "1.0.0",
+  "bin": {
+    "mcp-dev": "./dev.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "close-with-grace": "^2.3.0",
+    "execa": "^9.6.1",
+    "get-port": "^7.1.0",
+    "http-proxy": "^1.18.1"
+  }
+}

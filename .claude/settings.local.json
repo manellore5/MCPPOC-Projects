@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api:*)",
+      "Read(//c/Users/manel/**)",
+      "Bash(rm -rf \"C:/Users/manel/OneDrive/Desktop/my-monorepo/.claude/skills/to-issues\")",
+      "Bash(rm -rf \"C:/Users/manel/OneDrive/Desktop/my-monorepo/.claude/skills/to-prd\")",
+      "Bash(\"C:/Users/manel/nanobot/nanobot.exe\" run *)",
+      "Bash(npm install *)",
+      "Bash(npx vitest *)",
+      "Bash(npm test *)",
+      "Bash(npx dotenv *)",
+      "Bash(FINDANADVISOR_API_PORT=3334 npx tsx ./server/src/index.ts)",
+      "Bash(curl -s -X POST http://localhost:3334/api/match-advisors -H \"Content-Type: application/json\" -d '{\"name\":\"Smoke\",\"location\":\"Minneapolis\",\"budget\":100000,\"investmentTypes\":[\"stocks\"],\"riskLevel\":\"medium\"}')",
+      "Bash(npx vite *)",
+      "Bash(npx tsc *)",
+      "Bash(npx eslint *)",
+      "Bash(rm -rf server/dist client/dist)",
+      "Bash(npm run *)",
+      "Bash(node \"C:/Users/manel/OneDrive/Desktop/my-monorepo/apps/findanadvisor/server/dist/mcp/index.js\" *)",
+      "Bash(sleep 1 taskkill //F //IM node.exe //T)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" -X POST http://localhost:3000/api/match-advisors -H \"Content-Type: application/json\" -d '{\"name\":\"Alice\",\"location\":\"Minneapolis\",\"budget\":100000,\"investmentTypes\":[\"stocks\"],\"riskLevel\":\"medium\"}')",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:5173/)",
+      "Bash(curl *)",
+      "Bash(netstat -ano)",
+      "Bash(tasklist //FI \"IMAGENAME eq node.exe\")",
+      "Bash(timeout 10 npx tsx ./server/src/index.ts)",
+      "Bash(git add *)",
+      "Bash(grep -E \"\\\\.env\\(\\\\.|$\\)\")"
+    ]
+  }
+}
