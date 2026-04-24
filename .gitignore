@@ -37,3 +37,6 @@ nanobot.db
 nanobot.db-journal
 nanobot.db-shm
 nanobot.db-wal
+
+# Third-party Epic Web workshop — not part of this monorepo
+apps/mcp-ui/
