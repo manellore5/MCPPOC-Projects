@@ -2,6 +2,11 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+import {
+  ElicitRequestSchema,
+  type ElicitRequest,
+  type ElicitResult,
+} from "@modelcontextprotocol/sdk/types.js";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const mcpEntry = resolve(here, "..", "..", "src", "mcp", "index.ts");
@@ -12,8 +17,13 @@ export type TestMcpClient = {
   close: () => Promise<void>;
 };
 
+export type ElicitationHandler = (request: ElicitRequest) => ElicitResult | Promise<ElicitResult>;
+
 export async function setupMcpClient(
-  overrides: { env?: Record<string, string> } = {},
+  overrides: {
+    env?: Record<string, string>;
+    elicitation?: { handler: ElicitationHandler };
+  } = {},
 ): Promise<TestMcpClient> {
   const env: Record<string, string> = {
     ...(process.env as Record<string, string>),
@@ -26,7 +36,11 @@ export async function setupMcpClient(
     env,
   });
   const stderrBuffer = { collected: "" };
-  const client = new Client({ name: "findanadvisor-test", version: "0.1.0" });
+  const clientOptions = overrides.elicitation ? { capabilities: { elicitation: {} } } : undefined;
+  const client = new Client({ name: "findanadvisor-test", version: "0.1.0" }, clientOptions);
+  if (overrides.elicitation) {
+    client.setRequestHandler(ElicitRequestSchema, overrides.elicitation.handler);
+  }
   await client.connect(transport);
   // Hook stderr after connect (transport sets up the child process on connect).
   const stderrStream = transport.stderr as NodeJS.ReadableStream | null | undefined;

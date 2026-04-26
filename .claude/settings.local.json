@@ -26,7 +26,18 @@
       "Bash(tasklist //FI \"IMAGENAME eq node.exe\")",
       "Bash(timeout 10 npx tsx ./server/src/index.ts)",
       "Bash(git add *)",
-      "Bash(grep -E \"\\\\.env\\(\\\\.|$\\)\")"
+      "Bash(grep -E \"\\\\.env\\(\\\\.|$\\)\")",
+      "Bash(git check-ignore *)",
+      "Bash(anthropic\" ; echo \"---LOCAL---\"; ls \"C:\\\\Users\\\\manel\\\\AppData\\\\Local\\\\\")",
+      "Bash(anthropic\")",
+      "PowerShell(Test-Path *)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(where.exe node; node --version)",
+      "Bash(timeout 3 node \"./server/dist/mcp/index.js\")",
+      "Bash(echo \"EXIT: $?\")",
+      "PowerShell(Get-NetTCPConnection *)",
+      "Bash(git ls-remote *)",
+      "Bash(git fetch *)"
     ]
   }
 }

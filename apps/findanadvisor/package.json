@@ -7,7 +7,7 @@
     "dev:server": "tsx watch ./server/src/index.ts",
     "dev:client": "vite ./client --config ./client/vite.config.ts",
     "build": "npm run build:server && npm run build:client",
-    "build:server": "tsc -p tsconfig.build.json",
+    "build:server": "tsc -p tsconfig.build.json && node -e \"require('node:fs').cpSync('server/src/data/advisors.json','server/dist/data/advisors.json')\"",
     "build:client": "vite build ./client --config ./client/vite.config.ts",
     "test": "vitest run",
     "test:watch": "vitest",

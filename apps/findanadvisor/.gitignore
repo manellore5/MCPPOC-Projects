@@ -13,3 +13,6 @@ coverage
 playwright-report
 test-results
 .nyc_output
+
+# Personal learning notes — not committed
+docs/knowledge/
